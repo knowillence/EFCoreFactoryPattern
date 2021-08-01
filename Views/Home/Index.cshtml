@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Knowillence.Yaapiyal.Model.ref_record_status>
+
+@{
+    ViewData["Title"] = "Home Controller -> Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This is the home page view from home controller.</p>
+    <p>@ViewBag.Message</p>
+    @foreach (var record in Model)
+    { 
+        <h1>@record.record_status_id</h1>
+        <h2>@record.record_status_name</h2>
+        <h3>@record.record_status_desc</h3>
+        <hr />
+    }
+</div>
