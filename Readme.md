@@ -1,8 +1,14 @@
+#Introduction
+I developed this project to check if I can make ASP.NET Core 3.1 framework and Entity framework work in SQL Server and MySQL in one project.
+
+#Try this
 Demo project that will switch entity framework between SQL Server and MySQL.
 In AppSettings.json file change the value of the DBProvider from SQLServer to MySQLServer.
+
+#DB deployment
 Create the following table in both SQL Server and MySQL before you run this code.
 
-SQL Server Script to create table
+#SQL Server Script to create table
 
 SET ANSI_NULLS ON
 GO
@@ -25,8 +31,7 @@ GO
 INSERT [dbo].[ref_record_status] ([record_status_id], [record_status_name], [record_status_desc]) VALUES (1, N'Active', N'Active records are marked with this status.')
 GO
 
-MySQL Create Table Script
-
+#MySQL Create Table Script
 CREATE TABLE `ref_record_status` (
   `record_status_id` int NOT NULL,
   `record_status_name` varchar(50) NOT NULL,
